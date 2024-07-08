@@ -33,6 +33,7 @@ const Lessons = () => {
           <div>
             <h2>Beginner Lessons</h2>
             <LessonPreviews />
+            <h3 className="exercises-title">Beginner Exercises</h3>
             <Exercises category="Beginner" />
           </div>
         )}
@@ -40,6 +41,7 @@ const Lessons = () => {
           <div>
             <h2>Intermediate Lessons</h2>
             <LessonPreviews />
+            <h3 className="exercises-title">Intermediate Exercises</h3>
             <Exercises category="Intermediate" />
           </div>
         )}
@@ -47,11 +49,12 @@ const Lessons = () => {
           <div>
             <h2>Advanced Lessons</h2>
             <LessonPreviews />
+            <h3 className="exercises-title">Advanced Exercises</h3>
             <Exercises category="Advanced" />
           </div>
         )}
       </div>
-        </div>
+    </div>
   );
 };
 
@@ -83,7 +86,6 @@ const LessonPreviews = () => (
 
 const Exercises = ({ category }) => (
   <div className="exercises">
-    <h3>{category} Exercises</h3>
     <div className="exercise">
       <h4>Arabic Alphabet Quiz</h4>
       <button>Start Quiz</button>
